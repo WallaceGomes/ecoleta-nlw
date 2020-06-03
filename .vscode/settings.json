@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.fontSize": 16,
+    "emmet.syntaxProfiles": {
+        "javascript" : "jsx"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

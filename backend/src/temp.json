@@ -1,0 +1,10 @@
+{
+  "name": "Mercado do Zé",
+  "email": "ze.mercado@gmail.com",
+  "whatsapp": "02193939393",
+  "latitude": -22.883764,
+  "longitude": -43.297064,
+  "city": "Rio de Janeiro",
+  "uf": "RJ",
+  "items": [1, 2]
+}

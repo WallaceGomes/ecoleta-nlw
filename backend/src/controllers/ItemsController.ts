@@ -2,6 +2,7 @@ import knex from '../database/connection';
 import { Request, Response } from 'express';
 
 //http://localhost
+//http://192.168.0.14
 
 class ItemsController {
   async index(req: Request, res: Response) {

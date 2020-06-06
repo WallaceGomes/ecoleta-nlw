@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 import MapView, { Marker } from 'react-native-maps';
 import styles from './styles';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { SvgUri } from 'react-native-svg';
 import * as Location from 'expo-location';
 
@@ -25,6 +25,11 @@ interface Point {
   longitude: number;
 }
 
+interface Params {
+  uf: string;
+  city: string;
+}
+
 //reactFragment <> </> - utilizar quando precisar colocar mais de um elemento "raiz"
 //está carregando o mapa com condional de já ter conseguido a localização
 
@@ -37,6 +42,9 @@ const Points = () => {
     0,
   ]);
   const navigation = useNavigation();
+
+  const route = useRoute();
+  const routeParams = route.params as Params;
 
   useEffect(() => {
     async function loadPosition() {
@@ -69,15 +77,15 @@ const Points = () => {
     api
       .get('points', {
         params: {
-          city: 'Ameixas',
-          uf: 'PE',
-          items: [1],
+          city: routeParams.city,
+          uf: routeParams.uf,
+          items: selectedItems,
         },
       })
       .then((response) => {
         setPoints(response.data);
       });
-  }, []);
+  }, [selectedItems]);
 
   function handleSelectItem(id: number) {
     const alreadySelected = selectedItems.findIndex((item) => item === id);

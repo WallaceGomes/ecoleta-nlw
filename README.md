@@ -45,7 +45,7 @@ O projeto foi desenvolvido durante o evento Next Level Week da Rocketseat versã
 No desenvolvimento deste aplicativo foi possível praticar e relembrar diversos conceitos do ReactJS, NodeJS e React Native, com integração de uma api do IBGE para endereços e utilização de mapas com geolocalização.
 
 <h1 align="center">
-    <img alt="mapsapi" title="mapsapi" src=".github/mapsapiecoleta.png" width="500px" />
+    <img alt="mapsapi" title="mapsapi" src=".github/mapsapiecoleta2.png" width="500px" />
 </h1>
 
 ## :rocket: Techs

@@ -39,7 +39,13 @@ O Ecoleta é uma aplicativo baseado na semana internacional do meio embiente. Co
 O projeto foi desenvolvido durante o evento Next Level Week da Rocketseat versão booster.
 
 <h1 align="center">
-    <img alt="Example" title="Example" src=".github/ecoleta.svg" width="500px" />
+    <img alt="ecoleta" title="ecoleta" src=".github/ecoleta.svg" width="500px" />
+</h1>
+
+No desenvolvimento deste aplicativo foi possível praticar e relembrar diversos conceitos do ReactJS, NodeJS e React Native, com integração de uma api do IBGE para endereços e utilização de mapas com geolocalização.
+
+<h1 align="center">
+    <img alt="mapsapi" title="mapsapi" src=".github/mapsapiecoleta.png" width="500px" />
 </h1>
 
 ## :rocket: Techs
